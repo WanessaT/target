@@ -95,4 +95,29 @@ function calculaFaturamento() {
 
 }
 
+function calculaFaturamentoDist() {
 
+    const faturamentoPorEstado = {
+        SP: 67836.43,
+        RJ: 36678.66,
+        MG: 29229.88,
+        ES: 27165.48,
+        Outros: 19849.53
+    };
+
+    let totalFaturamento = Object.values(faturamentoPorEstado).reduce((total, valor) => total + valor, 0);
+
+    let percentoPorEstado = {};
+    for (let estado in faturamentoPorEstado) {
+        percentoPorEstado[estado] = (faturamentoPorEstado[estado] / totalFaturamento * 100).toFixed(2);
+    };
+
+    let resultado = 'Percentual de faturamento por estado:\n';
+    for (let estado in percentoPorEstado) {
+        alert(
+            resultado += `
+            - ${estado}: ${percentoPorEstado[estado]}%;
+        `)
+    }
+
+};
