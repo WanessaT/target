@@ -133,10 +133,7 @@ function inverterString() {
             stringInvertida += entradaString[i];
         };
 
-        alert(`De acordo com a palavra informada, o inverso dela é: ${stringInvertida}.`);
+        alert(`De acordo com a palavra informada, o inverso dela é: ${stringInvertida.toLocaleUpperCase()}.`);
     };
 
 };
-
-
-
