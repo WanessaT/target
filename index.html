@@ -1,14 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+            color: rgb(83, 3, 83);
+            font-size: 1.2rem;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+            height: 5rem;
+            width: 12rem;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            color: rgb(166, 52, 166);
+            border-radius: 0.5rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgba(222, 47, 222, 0.6);
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <button onclick="inverterString()">Ver</button>
-    
+    <h1>Teste Target</h1>
+    <p>No teste, foi utilizado a linguagem JavaScript para resolução das questões.</p>
+    <ul>
+        <li>
+            <button onclick="mostraSoma()">1. Mostrar soma</button>
+            <button onclick="sequenciaFibonacci()">2. Sequência fibonacci</button>
+            <button onclick="calculaFaturamento()">3. Calcular faturamento</button>
+            <button onclick="calculaFaturamentoDist()">4. Calcular percentual</button>
+            <button onclick="inverterString()">5. Inverter string</button>
+        </li>
+    </ul>
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -10,7 +10,7 @@ function mostraSoma() {
         soma = soma + k;
     };
 
-    alert(soma);
+    alert(`A soma dos valores de 1 a ${indice} é ${soma}.`);
 };
 
 function sequenciaFibonacci() {
