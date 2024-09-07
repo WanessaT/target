@@ -121,3 +121,22 @@ function calculaFaturamentoDist() {
     }
 
 };
+
+function inverterString() {
+
+    let entradaString = prompt("Digite uma palavra para ser invertida:");
+
+    if (entradaString !== null) {
+        let stringInvertida = '';
+
+        for (let i = entradaString.length - 1; i >= 0; i--) {
+            stringInvertida += entradaString[i];
+        };
+
+        alert(`De acordo com a palavra informada, o inverso dela é: ${stringInvertida}.`);
+    };
+
+};
+
+
+
